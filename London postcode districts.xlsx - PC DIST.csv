@@ -1,0 +1,269 @@
+Postcode district,Local Areas,Borough
+BR1,"Bromley, Bickley, Downham",Bromley
+BR2,"Bickley, Hayes, Bromley Common, Shortlands",Bromley
+BR3,"Beckenham, Eden Park, Elmers End, Park Langley, Shortlands",Bromley
+BR4,West Wickham,Bromley
+BR5,"Orpington, St Mary Cray, Petts Wood",Bromley
+BR6,"Orpington, Farnborough, Downe, Pratt's Bottom, Chelsfield, Well Hill",Bromley
+BR7,"Chislehurst, Elmstead",Bromley
+BR8,Swanley,Sevenoaks
+CR0,"Croydon, Addiscombe, Shirley, Addington, New Addington, Forestdale, Waddon",Croydon
+CR2,"South Croydon, Sanderstead, Selsdon, Addington",Croydon
+CR3,"Caterham, Whyteleafe, Chaldon, Woldingham",Croydon
+CR4,"Mitcham, Beddington Corner",Merton
+CR5,"Coulsdon, Chipstead, Woodmansterne",Croydon
+CR6,"Warlingham, Chelsham, Farleigh",Croydon
+CR7,Thornton Heath,Croydon
+CR8,"Purley, Kenley",Croydon
+CR9,Non-geographic,Croydon
+DA1,"Dartford, Crayford, Barnes Cray",Dartford
+DA14,"Sidcup, Foots Cray, Albany Park, Longlands",Bexley
+DA15,"Sidcup, Blackfen, Longlands, Lamorbey, Avery Hill",Bexley
+DA16,"Welling, Falconwood, East Wickham",Bexley
+DA17,"Belvedere, Lessness Heath",Bexley
+DA18,"Erith Marshes, Thamesmead",Bexley
+DA5,"Bexley, Albany Park, Joydens Wood",Bexley
+DA6,"Bexleyheath, Upton",Bexley
+DA7,"Bexleyheath, Barnehurst",Bexley
+DA8,"Erith, Northumberland Heath, Slade Green",Bexley
+E1,"Aldgate, Bishopsgate, Whitechapel, Shoreditch, Spitalfields, Shadwell, Stepney, Mile End, Portsoken",Tower Hamlets
+E10,"Leyton, Temple Mills, Hackney Marshes, Upper Clapton, Walthamstow Marshes",Hackney
+E11,"Leytonstone, Wanstead, Aldersbrook, Snaresbrook, Cann Hall",Waltham Forest
+E12,"Manor Park, Little Ilford, Aldersbrook",Newham
+E13,"Plaistow, West Ham, Upton Park",Newham
+E14,"Poplar, Isle of Dogs, Limehouse, Canary Wharf, Blackwall, Cubitt Town",Tower Hamlets
+E15,"Stratford, West Ham, Maryland, Leyton, Leytonstone, Temple Mills, Hackney Wick, Bow",Newham
+E16,"Silvertown, North Woolwich, Canning Town, Custom House, London City Airport",Newham
+E17,"Walthamstow, Upper Walthamstow",Waltham Forest
+E18,"Woodford, South Woodford",Redbridge
+E1W,Wapping,Tower Hamlets
+E2,"Bethnal Green, Haggerston, Shoreditch, Cambridge Heath",Tower Hamlets
+E20,"Olympic Park, Stratford",Newham
+E3,"Bow, Bromley-by-Bow, Old Ford, Mile End, Three Mills, London Gas Museum",Tower Hamlets
+E4,"Chingford, Sewardstone, Highams Park",Waltham Forest
+E5,"Upper Clapton, Lower Clapton, Leyton, Stoke Newington",Hackney
+E6,"East Ham, Beckton, Upton Park, Barking",Newham
+E7,"Forest Gate, Stratford",Newham
+E8,"Hackney Central, Dalston, London Fields",Hackney
+E9,"Homerton, Hackney Wick, South Hackney, Hackney Marshes, Victoria Park",Hackney
+EC1M,"Clerkenwell, Farringdon",Islington
+EC1N,Hatton Garden,Camden
+EC1R,"Finsbury, Finsbury Estate",Islington
+EC1V,"Finsbury, Moorfields Eye Hospital",Islington
+EC1Y,"St Luke's, Bunhill Fields",Islington
+EC2A,Shoreditch,Hackney
+EC2Y,Barbican,City of London
+EC3N,"Tower Hill, Tower of London",Tower Hamlets
+EN1,"Bush Hill Park, Bulls Cross, Enfield Town, Forty Hill",Enfield
+EN2,"Botany Bay, Clay Hill, Crews Hill, Bulls Cross, Enfield Chase, Enfield Town, Forty Hill",Enfield
+EN3,"Enfield Highway, Enfield Island Village, Enfield Lock, Enfield Wash, Ponders End",Enfield
+EN4,"Hadley Wood, Cockfosters, East Barnet, New Barnet",Enfield
+EN5,"High Barnet, Arkley",Barnet
+EN8,"Waltham Cross, Cheshunt",Enfield
+HA0,"Alperton, Sudbury, Sudbury Hill, Wembley Central, North Wembley",Harrow
+HA1,"Harrow, North Harrow, Northwick Park",Harrow
+HA2,"North Harrow, South Harrow",Harrow
+HA3,"Harrow Weald, Kenton, Wealdstone",Harrow
+HA4,Ruislip,Hillingdon
+HA5,"Pinner, Eastcote, Hatch End, Carpenders Park",Harrow
+HA6,"Northwood, Moor Park, Sandy Lodge",Hillingdon
+HA7,Stanmore,Harrow
+HA8,Edgware,Harrow
+HA9,"Wembley, Wembley Park, Wembley Central, Preston, Tokyngton",Brent
+IG1,Ilford,Redbridge
+IG11,Barking,Barking and Dagenham
+IG2,"Gants Hill, Newbury Park",Redbridge
+IG3,Seven Kings,Redbridge
+IG4,Redbridge,Redbridge
+IG5,Clayhall,Redbridge
+IG6,"Barkingside, Hainault",Redbridge
+IG7,Chigwell,Epping Forest
+IG8,"Woodford Green, Woodford Bridge",Redbridge
+IG9,Buckhurst Hill,Epping Forest
+KT1,"Kingston upon Thames, Hampton Wick",Kingston upon Thames
+KT17,"Stoneleigh, East Ewell, Epsom",Epsom and Ewell
+KT19,"Horton, West Ewell, Stoneleigh",Epsom and Ewell
+KT2,"Kingston upon Thames, Norbiton",Kingston upon Thames
+KT3,New Malden,Kingston upon Thames
+KT4,Worcester Park,Sutton
+KT5,"Berrylands, Tolworth",Kingston upon Thames
+KT6,"Surbiton, Tolworth, Long Ditton",Kingston upon Thames
+KT8,"West Molesey, East Molesey, Hampton Court Palace, Bushy Park",Elmbridge
+KT9,"Chessington, Hook, Malden Rushett",Kingston upon Thames
+N1,"Barnsbury, Canonbury, Kings Cross, Islington, Pentonville, De Beauvoir Town, Hoxton",Hackney
+N10,Muswell Hill,Haringey
+N11,"New Southgate, Friern Barnet, Bounds Green, Arnos Grove",Enfield
+N12,"North Finchley, Woodside Park",Barnet
+N13,Palmers Green,Enfield
+N14,"Southgate, Oakwood, Arnos Grove",Enfield
+N15,"West Green, Seven Sisters, Duckett's Green",Haringey
+N16,"Stoke Newington, Stamford Hill, Shacklewell, Dalston, Newington Green",Hackney
+N17,"Tottenham, South Tottenham",Haringey
+N18,"Upper Edmonton, Edmonton",Enfield
+N19,"Upper Holloway, Archway, Tufnell Park, Hornsey",Islington
+N1C,Kings Cross,Camden
+N2,"East Finchley, Fortis Green, Hampstead Garden Suburb",Barnet
+N20,"Whetstone, Totteridge, Oakleigh Park",Barnet
+N21,"Winchmore Hill, Bush Hill, Grange Park",Enfield
+N22,"Wood Green, Bounds Green, Bowes Park",Haringey
+N3,"Finchley, Church End, Finchley Central",Barnet
+N4,"Finsbury Park, Manor House, Harringay, Stroud Green",Haringey
+N5,"Highbury, Highbury Fields",Islington
+N6,"Highgate, Hampstead Heath",Camden
+N7,"Holloway, Barnsbury, Islington, Tufnell Park",Islington
+N8,"Hornsey, Crouch End, Harringay",Haringey
+N9,"Lower Edmonton, Edmonton",Enfield
+NW1,"Euston, Camden Town, Somers Town, Primrose Hill, Gospel Oak, Lisson Grove",Camden
+NW10,"Willesden, Acton, Harlesden, Kensal Green, Neasden, Old Oak Common, Park Royal, Stonebridge, Brent Park",Brent
+NW11,"Golders Green, Hampstead Garden Suburb",Barnet
+NW2,"Cricklewood, Willesden, Neasden, Dollis Hill, Childs Hill",Barnet
+NW3,"Hampstead, Chalk Farm, Primrose Hill, Swiss Cottage, Belsize Park, Gospel Oak, Frognal, Childs Hill",Camden
+NW4,"Brent Cross, Hendon",Barnet
+NW5,"Kentish Town, Tufnell Park, Dartmouth Park, Gospel Oak",Camden
+NW6,"Kilburn, Brondesbury, West Hampstead, Queen's Park",Brent
+NW7,"Mill Hill, Arkley",Barnet
+NW8,"St John's Wood, Primrose Hill, Lisson Grove",Camden
+NW9,"The Hyde, Colindale, Kingsbury, Queensbury, West Hendon",Barnet
+RM1,Romford,Havering
+RM10,Dagenham,Barking and Dagenham
+RM11,"Hornchurch, Emerson Park, Ardleigh Green",Havering
+RM12,"Hornchurch, Elm Park",Havering
+RM13,"Rainham, South Hornchurch, Wennington",Havering
+RM14,"Upminster, Cranham, North Ockendon, Bulphan",Havering
+RM2,"Gidea Park, Heath Park",Havering
+RM3,"Harold Wood, Harold Hill, Noak Hill",Havering
+RM4,"Havering-atte-Bower, Abridge, Stapleford Abbotts, Noak Hill, Navestock, Stapleford Tawney, Stapleford Aerodrome",Havering
+RM5,Collier Row,Havering
+RM6,"Chadwell Heath, Little Heath",Barking and Dagenham
+RM7,"Rush Green, Mawneys, Romford",Havering
+RM8,"Dagenham, Becontree Heath",Barking and Dagenham
+RM9,"Dagenham, Becontree",Barking and Dagenham
+SE1,"Bankside, South Bank, Southwark, Bermondsey, Vauxhall",Southwark
+SE10,"Greenwich, Maze Hill, Greenwich Peninsula",Greenwich
+SE11,"Kennington, Vauxhall",Lambeth
+SE12,"Lee, Grove Park, Chinbrook, Hither Green, Eltham, Horn Park, Blackheath",Lewisham
+SE13,"Lewisham, Hither Green, Ladywell",Lewisham
+SE14,"New Cross, New Cross Gate",Lewisham
+SE15,"Nunhead, Peckham",Lewisham
+SE16,"Rotherhithe, Bermondsey, Surrey Quays",Southwark
+SE17,"Walworth, Newington",Southwark
+SE18,"Plumstead, Woolwich",Greenwich
+SE19,"Upper Norwood, Crystal Palace, Crown Point, Norwood",Croydon
+SE2,"Abbey Wood, West Heath, Crossness, Thamesmead",Greenwich
+SE20,"Anerley, Crystal Palace, Penge, Beckenham",Bromley
+SE21,"Dulwich, Dulwich Village, West Dulwich, Tulse Hill, Sydenham Hill",Lambeth
+SE22,"East Dulwich, Peckham Rye, Loughborough Junction, Herne Hill",Southwark
+SE23,"Forest Hill, Honor Oak, Crofton Park",Lewisham
+SE24,"Herne Hill, Tulse Hill",Lambeth
+SE25,"South Norwood, Selhurst",Croydon
+SE26,"Sydenham, Crystal Palace",Bromley
+SE27,"West Norwood, Gipsy Hill, Norwood",Lambeth
+SE28,Thamesmead,Greenwich
+SE3,"Blackheath, Kidbrooke, Westcombe Park",Greenwich
+SE4,"Brockley, Crofton Park, Western Ladywell, Honor Oak",Lewisham
+SE5,"Camberwell, Denmark Hill, Southampton Way Estate, Peckham",Lambeth
+SE6,"Bellingham, Catford, Hither Green",Lewisham
+SE7,Charlton,Greenwich
+SE8,"Deptford, Evelyn",Lewisham
+SE9,"Eltham, Mottingham, New Eltham, Falconwood, Chinbrook, Longlands, Kidbrooke",Greenwich
+SM1,"Sutton, Rose Hill, The Wrythe, Carshalton, Benhilton, Erskine Village",Sutton
+SM2,"Belmont, South Sutton, East Ewell",Sutton
+SM3,North Cheam,Sutton
+SM4,"Morden, Morden Park, Lower Morden, St. Helier",Merton
+SM5,"Carshalton, Carshalton Beeches, Carshalton on the Hill, The Wrythe, Carshalton Village, Eastern St. Helier, Middleton Circle",Sutton
+SM6,"Wallington, Beddington, Hackbridge, Roundshaw, South Beddington",Sutton
+SM7,Banstead,Reigate and Banstead
+SW10,"West Brompton, Chelsea",Kensington and Chelsea
+SW11,"Battersea, Clapham Junction",Wandsworth
+SW12,"Balham, Clapham South, Hyde Farm",Wandsworth
+SW13,"Barnes, Castelnau",Richmond upon Thames
+SW14,"Mortlake, East Sheen",Richmond upon Thames
+SW15,"Putney, Roehampton University",Wandsworth
+SW16,"Streatham, Norbury, Thornton Heath, Streatham Park, Furzedown, Streatham Vale, Pollards Hill",Lambeth
+SW17,"Tooting, Mitcham",Wandsworth
+SW18,"Wandsworth, Southfields, Earlsfield",Wandsworth
+SW19,"Wimbledon, Colliers Wood, Southfields",Merton
+SW1A,"Whitehall, Buckingham Palace",Westminster
+SW1E,"Buckingham Gate, Victoria Station",Westminster
+SW1H,"Buckingham Gate, Victoria St, Birdcage Walk",Westminster
+SW1P,"Victoria Station, the Houses of Parliament, Vauxhall Bridge, Pimlico",Westminster
+SW1V,"Vauxhall Bridge, Chelsea Bridge, Victoria Station, Pimlico",Westminster
+SW1W,Belgravia,Westminster
+SW1X,"Belgravia, Knightsbridge",Westminster
+SW1Y,St. James's,Westminster
+SW2,"Brixton, Brixton Hill, Streatham Hill, Tulse Hill, Clapham Park, Balham",Lambeth
+SW20,"Merton Park, Raynes Park",Merton
+SW3,"Chelsea, Brompton, Knightsbridge",Kensington and Chelsea
+SW4,"Clapham, Stockwell",Lambeth
+SW5,Earl's Court,Kensington and Chelsea
+SW6,"Fulham, Parson's Green",Hammersmith and Fulham
+SW7,"South Kensington, Knightsbridge",Kensington and Chelsea
+SW8,"South Lambeth, Vauxhall, Battersea, Clapham, Stockwell",Lambeth
+SW9,"Stockwell, Brixton, Clapham",Lambeth
+TN14,Cudham,Bromley
+TN16,"Biggin Hill, Tatsfield",Bromley
+TW1,"Twickenham, St. Margarets, Strawberry Hill",Richmond upon Thames
+TW10,"Ham, Petersham",Richmond upon Thames
+TW11,Teddington,Richmond upon Thames
+TW12,Hampton,Richmond upon Thames
+TW13,"Feltham, Hanworth",Hounslow
+TW14,Hatton,Hounslow
+TW16,Sunbury-on-thames,Spelthorne
+TW19,"Stanwell, Wraysbury",Spelthorne
+TW2,"Whitton, Strawberry Hill",Richmond upon Thames
+TW3,"Hounslow, Maswell Park, Lampton",Hounslow
+TW4,"Hounslow West, Hounslow Heath, Whitton",Hounslow
+TW5,Heston,Hounslow
+TW6,Heathrow,Hillingdon
+TW7,"Isleworth, Osterley",Hounslow
+TW8,Brentford,Hounslow
+TW9,"North Sheen, Kew",Richmond upon Thames
+UB1,Southall,Ealing
+UB10,"Hillingdon, Ickenham",Hillingdon
+UB11,Stockley Park,Hillingdon
+UB2,Southall,Ealing
+UB3,"Hayes, Harlington",Hillingdon
+UB4,"Yeading, Hayes",Hillingdon
+UB5,Northolt,Ealing
+UB6,"Greenford, Perivale",Ealing
+UB7,"West Drayton, Harmondsworth, Sipson, Yiewsley, Longford",Hillingdon
+UB8,"Uxbridge, Cowley, Hillingdon",Hillingdon
+UB9,"Denham, Harefield",South Buckinghamshire
+W10,"North Kensington, Queens Park",Kensington and Chelsea
+W11,"Notting Hill, Holland Park",Kensington and Chelsea
+W12,"Shepherds Bush, White City",Hammersmith and Fulham
+W13,"West Ealing, Northfields",Ealing
+W14,"West Kensington, Kensington Olympia, Holland Park",Kensington and Chelsea
+W1B,"Portland Street, Regent Street",Westminster
+W1C,Oxford Street (west),Westminster
+W1D,"Soho (south east), Chinatown, Soho Square",Westminster
+W1F,Soho (north west),Westminster
+W1G,Harley Street,Westminster
+W1H,Marylebone,Westminster
+W1J,"Mayfair (south), Piccadilly, Royal Academy",Westminster
+W1K,"Mayfair (north), Grosvenor Square",Westminster
+W1S,"Hanover Square, Savile Row",Westminster
+W1T,"Fitzrovia, Tottenham Court Road",Camden
+W1U,Marylebone,Westminster
+W1W,"Great Portland Street, Fitzrovia",Westminster
+W2,"Paddington, Bayswater, Hyde Park, Westbourne Green, Little Venice, Westbourne Green, Notting Hill",Westminster
+W3,"Acton, East Acton, Park Royal, West Acton",Ealing
+W4,"Chiswick, Gunnersbury, Turnham Green, Bedford Park",Hounslow
+W5,"Ealing, Park Royal",Ealing
+W6,"Hammersmith, Ravenscourt Park",Hammersmith and Fulham
+W7,"Hanwell, Boston Manor",Ealing
+W8,"Kensington, Holland Park",Kensington and Chelsea
+W9,"Maida Vale, Little Venice",Westminster
+WC1A,New Oxford Street,Camden
+WC1B,"Bloomsbury, British Museum",Camden
+WC1E,University College London,Camden
+WC1H,St Pancras,Camden
+WC1N,Great Ormond Street Hospital,Camden
+WC1V,High Holborn,Camden
+WC1X,"Kings Cross, Finsbury (west)",Camden
+WC2A,"Lincoln's Inn Fields, Royal Courts of Justice",Camden
+WC2B,"Drury Lane, Aldwych",Camden
+WC2E,Covent Garden,Westminster
+WC2H,Leicester Square,Westminster
+WC2N,Charing Cross,Westminster
+WC2R,Somerset House,Westminster

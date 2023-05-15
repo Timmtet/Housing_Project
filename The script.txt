@@ -1,0 +1,156 @@
+def OnTheMarket_sales(postcodes, Trans_type, website, df):
+    """
+    This function scrapes property data from Rightmove for a given list of postcodes and transaction type,
+    and returns the data as a pandas DataFrame.
+
+    Arguments:
+    postcodes -- a list of postcodes for which to scrape property data
+    Trans_type -- the transaction type of the properties to be scraped ('sales' or 'rent')
+    website -- the name of the website being scraped (in this case, 'Rightmove')
+    df -- an empty pandas DataFrame to store the scraped data
+
+    Returns:
+    df1 -- a pandas DataFrame containing the scraped property data
+    
+    """    
+    # Set the path to the ChromeDriver executable
+    s = Service("C:\\Users\\user\\Downloads\\Set ups\\chromedriver_win32\\chromedriver.exe")
+    
+    # Launch the ChromeDriver with the specified service
+    driver = webdriver.Chrome(service= s)
+    
+    # Navigate to the specified URL 
+    driver.get('https://www.onthemarket.com/') 
+
+    # Click to cancel the pop-up window and maximize the window
+    driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div/div/div[2]/button').click()
+    time.sleep(2)
+    driver.maximize_window()
+    
+    #click on Rent option 
+    driver.find_element(By.XPATH, '/html/body/div[2]/div[3]/div/div/div/div/div[1]/button[2]').click()
+    time.sleep(1.2)
+
+    # Find the search bar  
+    time.sleep(1.2)
+    search = driver.find_element(By.XPATH, '/html/body/div[2]/div[3]/div/div/div/div/div[2]/div/div[1]/div/div/input')
+    search.send_keys(postcode)
+    time.sleep(1.3)
+    
+    
+    # Click the search button
+    time.sleep(3)
+    driver.find_element(By.XPATH, '/html/body/div[2]/div[3]/div/div/div/div/div[2]/div/div[1]/div/div/button').click()
+    
+    # Enable list view
+    time.sleep(13)
+    #driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[3]/div/div/div[2]/div/div[3]/div[1]/span[2]/a/span').click()
+    
+    # Initialize empty lists for storing scraped data
+    Trans_type = []
+    address = []
+    types = []
+    bedrooms = []
+    bathrooms = []
+    prices = []
+    desc = []
+    date_added = []
+    agent_list = []
+    property_url = []
+    website = []
+    
+    # Create an empty dataframe to store the scraped data
+    df = pd.DataFrame()
+    
+     # Setting the page number to be 1 
+    i = 1
+    while True:
+        # Scrapping data for the required features in the first page
+        time.sleep(2)
+        print("{} {} {} {}".format('scraping page', i,'from', postcode ))
+        address_list = driver.find_elements(By.XPATH, '//div[2]/p/span[2]/a')
+        type_list = driver.find_elements(By.XPATH, "//div[2]/p/span[1]/a")
+        bedroom_list = driver.find_elements(By.XPATH, '//div[2]/div[4]/div[1]')
+        bathroom_list = driver.find_elements(By.XPATH, '//div[2]/div[4]/div[2]')
+        price_list = driver.find_elements(By.XPATH, '//div[2]/div[2]/a')
+        desc_list = driver.find_elements(By.XPATH, '//div[2]/p/span[2]/a')
+        date_added_list = driver.find_elements(By.XPATH, '//div[3]/div[1]/div[2]/a')
+        agent_list_list = driver.find_elements(By.XPATH, '//div[3]/div[1]/div[2]/small/a')
+        property_url_list = driver.current_url
+        Trans_type_list = Trans_type
+        website_list = website
+        for address_item, type_item, bedroom_item, bathroom_item, price_item, desc_item, date_added_item, agent_list_item in zip(address_list, type_list, bedroom_list, bathroom_list, price_list, desc_list, date_added_list, agent_list_list):
+            address.append(address_item.text)
+            types.append(type_item.text)
+            bedrooms.append(bedroom_item.text)
+            bathrooms.append(bathroom_item.text)
+            prices.append(price_item.text)
+            desc.append(address_item.text + '. ' + type_item.text)
+            date_added.append(date_added_item.text)
+            agent_list.append(agent_list_item.text)
+            property_url.append(property_url_list)
+            Trans_type.append(Trans_type_list)
+            website.append(website_list)
+
+
+        time.sleep(1.3)
+        # get the height of the page
+        page_height = driver.execute_script("return document.body.scrollHeight;")
+
+        # scroll to the middle of the page using JavaScript
+        driver.execute_script(f"window.scrollTo(0, {page_height//3});")
+
+        # Click to cancel the pop-up window 
+        time.sleep(1.5)
+        try:
+            time.sleep(1.6)
+            driver.find_element(By.XPATH, '//div[5]/div/div/button')
+            driver.find_element(By.XPATH, '//div[5]/div/div/button').click()
+            time.sleep(1.1)
+        except:
+            time.sleep(1.5)
+
+
+        # check if current page is the last page. If true break away from the loop
+        time.sleep(3)
+        try:
+            time.sleep(15)
+            driver.current_url 
+            driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[3]/div/div/div[4]/div/div[2]/div/a/button')
+            time.sleep(15)
+            next_botton = driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[3]/div/div/div[4]/div/div[2]/div/a/button')
+            
+            time.sleep(3)
+            # Checks for the last next button and breaks off
+            html = next_botton.get_attribute('outerHTML') 
+            if 'disabled' in html:
+                print('------------------------------- SCRAPING COMPLETED FOR ' + postcode)
+                break
+            else:
+                next_botton = driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div[3]/div/div/div[4]/div/div[2]/div/a/button')
+                next_botton.click()
+            
+            
+
+            #Increment the page number
+            i += 1
+
+        except:
+            print('------------------------------- SCRAPING COMPLETED FOR ' + postcode)
+            break
+
+        time.sleep(1.3) 
+
+        
+        
+    # Create a dataframe to store data scrapped for each postcode    
+    df1 = pd.DataFrame({'Location': postcode, 'Tansaction_Type': 'Rent','Property_Type':types, 'Address' :address, 'Bedrooms': bedrooms, 'Bathrooms':bathrooms, 'Price':prices, 'Description': desc, 'Listing_Date':date_added, 'Agent':agent_list, 'Listing_Source': 'OnTheMartket', 'listing_URL':property_url})
+    df1.insert(0, 'Unique_Id', [f'{postcode}S{i+1:05d}OM' for i in range(len(df1))])
+    print('Total numbers of properties available in ' + postcode + ' is ' + str(df1.shape[0]))
+
+     # Concat the dataframe obtain for all postcodes
+    df = pd.concat([df, df1], ignore_index=True)
+    
+     # Return a dataframe
+    return df1
+

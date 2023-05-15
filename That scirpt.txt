@@ -1,0 +1,77 @@
+def rightMove(i, Trans_type, website):
+    s = Service("C:\\Users\\user\\Downloads\\Set ups\\chromedriver_win32\\chromedriver.exe")
+    #s = Service("C:\\Users\\akint\\Downloads\\Set up files\\chromedriver.exe")
+    driver = webdriver.Chrome(service= s)
+
+    driver.get('https://www.rightmove.co.uk/')
+    driver.maximize_window()
+    time.sleep(2)
+
+    time.sleep(1)
+    search = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/main/div[1]/div/div/div/div/input')
+    search.send_keys(postcode)
+
+    time.sleep(2)
+    driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/main/div[1]/div/div/div/button[1]').click()
+
+    time.sleep(2)
+    driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div/div[1]/div/form/fieldset[2]/div[4]/button').click()
+
+    Trans_type = []
+    address = []
+    types = []
+    bedrooms = []
+    bathrooms = []
+    prices = []
+    desc = []
+    date_added = []
+    agent_list = []
+    property_url = []
+    website = []
+    
+    df = pd.DataFrame()
+    
+    i = 1
+    while True:
+        time.sleep(2)
+        print("{} {} {} {}".format('scraping page', i,'from', postcode ))
+        address_list = driver.find_elements(by='class name', value='propertyCard-address')
+        type_list = driver.find_elements(By.XPATH, "//div/div/div[4]/div[1]/div[2]/a/div/span[1]")
+        bedroom_list = driver.find_elements(By.XPATH, '//div/div/div[4]/div[1]/div[2]/a/div/span[3]')
+        bathroom_list = driver.find_elements(By.XPATH, '//div/div/div[4]/div[1]/div[2]/a/div/span[5]')
+        price_list = driver.find_elements(By.XPATH, '//div/div/div[3]/div/a/div[1]')
+        desc_list = driver.find_elements(By.XPATH, '//div/div/div[4]/div[1]/div[3]/a/span/span')
+        date_added_list = driver.find_elements(By.XPATH, '//div/div/div[4]/div[2]/div/span')
+        agent_list_list = driver.find_elements(By.XPATH, '//div/div/div[4]/div[2]/div')
+        property_url_list = driver.current_url
+        Trans_type_list = Trans_type
+        website_list = website
+        for address_item, type_item, bedroom_item, bathroom_item, price_item, desc_item, date_added_item, agent_list_item in zip(address_list, type_list, bedroom_list, bathroom_list, price_list, desc_list, date_added_list, agent_list_list):
+            address.append(address_item.text)
+            types.append(type_item.text)
+            bedrooms.append(bedroom_item.text)
+            bathrooms.append(bathroom_item.text)
+            prices.append(price_item.text)
+            desc.append(desc_item.text)
+            date_added.append(date_added_item.text)
+            agent_list.append(agent_list_item.text)
+            property_url.append(property_url_list)
+            Trans_type.append(Trans_type_list)
+            website.append(website_list)
+        next_botton = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[3]/div/div/div/div[3]/button/span')
+        last_botton_check = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[1]/div[3]/div/div/div/div[3]/button')
+        html = last_botton_check.get_attribute('outerHTML') 
+        if 'disabled' in html:
+            print('------------------------------- SCRAPING COMPLETED FOR ' + postcode)
+            break
+        next_botton.click()
+        i += 1
+        time.sleep(2)
+        
+    df1 = pd.DataFrame({'Location': postcode, 'Tansaction_Type': 'Sales','Property_Type':types, 'Address' :address, 'Bedrooms': bedrooms, 'Bathrooms':bathrooms, 'Price':prices, 'Description': desc, 'Listing_Date':date_added, 'Agent':agent_list, 'Listing_Source': 'RightMove', 'listing_URL':property_url})
+    df1.insert(0, 'Unique_Id', [f'{postcode}{i+1:05d}' for i in range(len(df1))])
+    print(df1.shape)
+    
+    df2 = pd.concat([df, df1], ignore_index=True)
+    return df2
+
